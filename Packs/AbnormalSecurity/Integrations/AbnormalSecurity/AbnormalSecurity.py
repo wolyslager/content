@@ -937,6 +937,7 @@ def main():  # pragma: nocover
                 fetch_abuse_campaigns=fetch_abuse_campaigns,
                 fetch_account_takeover_cases=fetch_account_takeover_cases
             )
+            print('test')
             demisto.setLastRun(next_run)
             demisto.incidents(incidents)
         elif command in commands:
